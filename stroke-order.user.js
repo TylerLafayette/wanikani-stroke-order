@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WaniKani Stroke Order
-// @version     0.0.1
+// @version     0.0.2
 // @description WaniKani userscript to add stroke order animations from Kanji alive
 // @author      Tyler Lafayette
 // @copyright   2019, Tyler Lafayette
