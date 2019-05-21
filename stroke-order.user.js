@@ -44,7 +44,8 @@ const stroke_order = {
 		
 		data = data.filter(x => x != null)
 
-		$("#question").append(`<div style="position:absolute;top:0;width:100%;height:64px;display:flex;align-items:center;justify-content:center;">${data.map(i => `<video class="ka-video" width=58 height=58 style="box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3); margin-left: 4px;margin-right:4px;" autoplay=true loop=true src=${i}></video>`)}</div>`)
+		$("#ka-wrapper").remove()
+		$("#question").append(`<div id="ka-wrapper" style="position:absolute;top:0;width:100%;height:64px;display:flex;align-items:center;justify-content:center;">${data.map(i => `<video class="ka-video" width=58 height=58 style="box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3); margin-left: 4px;margin-right:4px;" autoplay=true loop=true src=${i}></video>`)}</div>`)
 		stroke_order.register_handlers()
 	},
 	getAnimationURL: async kanji => {
